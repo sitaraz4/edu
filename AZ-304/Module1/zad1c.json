@@ -1,0 +1,36 @@
+{
+    "properties": {
+      "displayName": "Require a tag on resources",
+      "policyType": "Custom",
+      "mode": "Indexed",
+      "description": "Enforces existence of a tag. Does not apply to resource groups.",
+      "metadata": {
+        "category": "Tags",
+        "createdBy": "fc154561-bacb-4a70-9b52-e676944ccfb2",
+        "createdOn": "2021-02-07T19:39:32.1900009Z",
+        "updatedBy": null,
+        "updatedOn": null
+      },
+      "parameters": {
+        "tagName": {
+          "type": "String",
+          "metadata": {
+            "displayName": "Tag Name",
+            "description": "Name of the tag, such as 'project'"
+          }
+        }
+      },
+      "policyRule": {
+        "if": {
+          "field": "[concat('tags[', parameters('tagName'), ']')]",
+          "exists": "false"
+        },
+        "then": {
+          "effect": "deny"
+        }
+      }
+    },
+    "id": "/subscriptions/e2267409-d6f4-428d-b8a8-c5f21b595add/providers/Microsoft.Authorization/policyDefinitions/225e3dcc-d4f4-4126-955c-194e5d733971",
+    "type": "Microsoft.Authorization/policyDefinitions",
+    "name": "225e3dcc-d4f4-4126-955c-194e5d733971"
+  }

@@ -1,0 +1,17 @@
+Zadanie 1a
+w zadaniu posiłkowałem sie wbudowaną pilityka '[Preview]: Storage account public access should be disallowed'. Po przypisaniu mojej polityki do subskrypcji nie dało się utworzyć sa z public access.
+Natomiast nie udało mi sie tez utworzyc ac z Connectivity method 'Private endpoint', bycmoze zle skonfigurowalem provate endpoint ale ciagle dzialala powyzsza polityka.
+"Resource 'samstest02' was disallowed by policy. Policy identifiers: '... (Code: RequestDisallowedByPolicy)","policyDetails":[]}]
+
+Zadanie 1b
+Uzyłem wbudowanej polityki Public network access on Azure SQL Database should be disabled
+
+Zadanie 1c
+w zadaniu wykorzytalem definicje wbudowanej polityki 'Require a tag on resources'
+
+Zadanie 1d
+zad1d.json
+
+Zadanie 1e
+Skorzystałem z wbudowanych polityk Deploy Log 'Analytics agent for Windows VMs' i 'Deploy Log Analytics agent for Linux VMs'
+

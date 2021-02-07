@@ -1,0 +1,45 @@
+{
+    "properties": {
+      "displayName": "Require a tag with email on resources",
+      "policyType": "Custom",
+      "mode": "Indexed",
+      "description": "Enforces a required tag and its value. Does not apply to resource groups.",
+      "metadata": {
+        "category": "Tags",
+        "createdBy": "fc154561-bacb-4a70-9b52-e676944ccfb2",
+        "createdOn": "2021-02-07T20:50:25.7458831Z",
+        "updatedBy": null,
+        "updatedOn": null
+      },
+      "parameters": {
+        "tagName": {
+          "type": "String",
+          "metadata": {
+            "displayName": "Tag Name",
+            "description": "Name of the tag, such as 'owner'"
+          }
+        },
+        "tagValue": {
+          "type": "String",
+          "metadata": {
+            "displayName": "Tag Value",
+            "description": "Value of the tag, such as email in correct domain '@chmurowisko.pl'"
+          }
+        }
+      },
+      "policyRule": {
+        "if": {
+          "not": {
+            "field": "[concat('tags[', parameters('tagName'), ']')]",
+            "contains": "[parameters('tagValue')]"
+          }
+        },
+        "then": {
+          "effect": "deny"
+        }
+      }
+    },
+    "id": "/subscriptions/e2267409-d6f4-428d-b8a8-c5f21b595add/providers/Microsoft.Authorization/policyDefinitions/3b051d11-9b19-4f67-86cf-4539c66207a7",
+    "type": "Microsoft.Authorization/policyDefinitions",
+    "name": "3b051d11-9b19-4f67-86cf-4539c66207a7"
+  }

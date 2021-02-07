@@ -1,0 +1,35 @@
+{
+    "properties": {
+      "displayName": "Storage account public access should be disallowed",
+      "policyType": "Custom",
+      "mode": "Indexed",
+      "metadata": {
+        "category": "Storage",
+        "createdBy": "fc154561-bacb-4a70-9b52-e676944ccfb2",
+        "createdOn": "2021-02-07T19:55:12.7008788Z",
+        "updatedBy": "fc154561-bacb-4a70-9b52-e676944ccfb2",
+        "updatedOn": "2021-02-07T20:16:06.9562493Z"
+      },
+      "parameters": {},
+      "policyRule": {
+        "if": {
+          "allOf": [
+            {
+              "field": "type",
+              "equals": "Microsoft.Storage/storageAccounts"
+            },
+            {
+              "field": "Microsoft.Storage/storageAccounts/allowBlobPublicAccess",
+              "equals": "true"
+            }
+          ]
+        },
+        "then": {
+          "effect": "deny"
+        }
+      }
+    },
+    "id": "/subscriptions/e2267409-d6f4-428d-b8a8-c5f21b595add/providers/Microsoft.Authorization/policyDefinitions/fac68f28-93b1-4b46-9d4c-1cbf622a938c",
+    "type": "Microsoft.Authorization/policyDefinitions",
+    "name": "fac68f28-93b1-4b46-9d4c-1cbf622a938c"
+  }
