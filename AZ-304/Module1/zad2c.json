@@ -1,0 +1,19 @@
+{
+    "properties": {
+        "roleName": "SecurityEng",
+        "description": "",
+        "assignableScopes": [
+            "/subscriptions/e2267409-d6f4-428d-b8a8-c5f21b595add"
+        ],
+        "permissions": [
+            {
+                "actions": [
+                    "Microsoft.OperationalInsights/workspaces/analytics/query/action"
+                ],
+                "notActions": [],
+                "dataActions": [],
+                "notDataActions": []
+            }
+        ]
+    }
+}

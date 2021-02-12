@@ -1,0 +1,54 @@
+{
+    "properties": {
+        "roleName": "SecurityManager",
+        "description": "",
+        "assignableScopes": [
+            "/subscriptions/e2267409-d6f4-428d-b8a8-c5f21b595add"
+        ],
+        "permissions": [
+            {
+                "actions": [
+                    "Microsoft.Authorization/*/read",
+                    "Microsoft.Authorization/policyAssignments/*",
+                    "Microsoft.Authorization/policyDefinitions/*",
+                    "Microsoft.Authorization/policyExemptions/*",
+                    "Microsoft.Authorization/policySetDefinitions/*",
+                    "Microsoft.Insights/alertRules/*",
+                    "Microsoft.Management/managementGroups/read",
+                    "Microsoft.operationalInsights/workspaces/*/read",
+                    "Microsoft.Resources/deployments/*",
+                    "Microsoft.Resources/subscriptions/resourceGroups/read",
+                    "Microsoft.Security/*",
+                    "Microsoft.Support/*"
+                ],
+                "notActions": [
+                    "Microsoft.Security/advancedThreatProtectionSettings/write",
+                    "Microsoft.Security/applicationWhitelistings/write",
+                    "Microsoft.Security/assessmentMetadata/write",
+                    "Microsoft.Security/assessments/write",
+                    "Microsoft.Security/autoProvisioningSettings/write",
+                    "Microsoft.Security/automations/write",
+                    "Microsoft.Security/deviceSecurityGroups/write",
+                    "Microsoft.Security/informationProtectionPolicies/write",
+                    "Microsoft.Security/iotDefenderSettings/write",
+                    "Microsoft.Security/iotSecuritySolutions/write",
+                    "Microsoft.Security/iotSensors/write",
+                    "Microsoft.Security/iotSite/write",
+                    "Microsoft.Security/locations/jitNetworkAccessPolicies/write",
+                    "Microsoft.Security/pricings/write",
+                    "Microsoft.Security/sqlVulnerabilityAssessments/baselineRules/write",
+                    "Microsoft.Security/alertsSuppressionRules/write",
+                    "Microsoft.Security/securityContacts/write",
+                    "Microsoft.Security/policies/write",
+                    "Microsoft.Security/securitySolutions/write",
+                    "Microsoft.Security/settings/write",
+                    "Microsoft.Security/webApplicationFirewalls/write",
+                    "Microsoft.Security/workspaceSettings/write",
+
+                ],
+                "dataActions": [],
+                "notDataActions": []
+            }
+        ]
+    }
+}

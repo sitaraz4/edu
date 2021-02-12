@@ -1,0 +1,36 @@
+{
+    "properties": {
+        "roleName": "ProjectOwner",
+        "description": "",
+        "assignableScopes": [
+            "/subscriptions/e2267409-d6f4-428d-b8a8-c5f21b595add"
+        ],
+        "permissions": [
+            {
+                "actions": [
+                    "Microsoft.Compute/virtualMachines/*",
+                    "Microsoft.Kubernetes/*",
+                    "Microsoft.KubernetesConfiguration/*",
+                    "Microsoft.Storage/register/action",
+                    "Microsoft.Storage/deletedAccounts/read",
+                    "Microsoft.Storage/locations/checknameavailability/read",
+                    "Microsoft.Storage/checknameavailability/read",
+                    "Microsoft.Storage/storageAccounts/*"
+                ],
+                "notActions": [
+                    "Microsoft.Network/*",
+                    "Microsoft.Insights/Components/AnalyticsTables/Delete",
+                    "Microsoft.Insights/Components/AnalyticsTables/Read",
+                    "Microsoft.Insights/Components/AnalyticsTables/Write",
+                    "Microsoft.Insights/Components/MyAnalyticsItems/Write",
+                    "Microsoft.Insights/Components/MyAnalyticsItems/Delete",
+                    "Microsoft.Insights/Components/AnalyticsItems/Write",
+                    "Microsoft.Insights/Components/AnalyticsItems/Read",
+                    "Microsoft.Insights/Components/AnalyticsItems/Delete"
+                ],
+                "dataActions": [],
+                "notDataActions": []
+            }
+        ]
+    }
+}
